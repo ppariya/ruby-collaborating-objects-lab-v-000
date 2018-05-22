@@ -44,6 +44,6 @@ class Artist
   end
 
   def print_songs
-    songs.each {|title| puts title.title}
+    songs.each {|song| puts song.title}
   end
 end
