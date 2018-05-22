@@ -42,4 +42,8 @@ class Artist
     artist.save
     artist
   end
+
+  def print_songs
+    @songs
+  end
 end
