@@ -36,6 +36,3 @@ class Artist
     self.new(name).save
   end
 end
-
-
-
