@@ -33,5 +33,14 @@ class Artist
     end
   end
 
+  def self.find(name)
+    @@all.find {|artist| artist.name == name}
+  end
+
+  def self.create(name)
+    self.new(name).save
+  end
+end
+
 
 end
