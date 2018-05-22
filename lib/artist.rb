@@ -24,11 +24,11 @@ class Artist
     @@all
   end
 
-  def self.find_or_create_by_name(artist)
-    if @@all.include?(artist)
-      artist
+  def self.find_or_create_by_name(name)
+    if @@all.include?(name)
+      name
     else
-      self.new(artist).save
+      self.new(name).save
 
     end
   end
