@@ -44,6 +44,6 @@ class Artist
   end
 
   def print_songs
-    print @songs
+    @songs.title
   end
 end
