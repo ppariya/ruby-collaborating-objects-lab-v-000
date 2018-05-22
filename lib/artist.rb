@@ -25,12 +25,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if @@all.find(name)
-
-    else
-      self.new(name).save
-      name
-    end
+    self.find(name) ? self.find(name) : self.create(name)
   end
 
   def self.find(name)
@@ -43,4 +38,4 @@ class Artist
 end
 
 
-end
+
