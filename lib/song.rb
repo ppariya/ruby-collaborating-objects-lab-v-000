@@ -5,7 +5,7 @@ class Song
     @title = title
   end
 
-  def artist=(name)
+  def artist=(artist)
     song.artist = self
   end
 end
