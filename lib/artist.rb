@@ -24,11 +24,11 @@ class Artist
     @@all
   end
 
-  def self.find_or_create_by_name(song)
-    if @songs.include?(song)
+  def self.find_or_create_by_name(artist)
+    if @@all.include?(artist)
 
     else
-      title = Song.new(song)
+      Artist.new(artist).save
     end
   end
 
