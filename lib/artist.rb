@@ -17,11 +17,11 @@ class Artist
   end
 
   def save
-    @@all << @name
+    self.all
   end
 
   def self.all
-    @@all 
+    @@all
   end
-  
+
 end
