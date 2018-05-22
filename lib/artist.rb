@@ -28,7 +28,8 @@ class Artist
     if @@all.include?(artist)
 
     else
-      Artist.new(artist).save
+      self.new(artist).save
+
     end
   end
 
